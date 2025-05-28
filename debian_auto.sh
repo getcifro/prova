@@ -13,7 +13,7 @@ cat <<"EOF"
                                     
 EOF
 
-echo -e "#############################\n"
+
 echo -e "Iniciando configuração..."
 
 #Configuração do  repositorio
@@ -23,10 +23,7 @@ echo -e "Iniciando configuração..."
 # Copia de segurança
 mkdir /root/bkp
 cp /etc/apt/sources.list /root/bkp/sources.list.copy
-
-#comentando linha do CD/ROM
-
-#sed -i '1,1s/^[^#]/# &/g' /etc/apt/sources.list.d/debian.sources
+echo -e "\n"
 
 #Adicionando repositorios
 
@@ -41,22 +38,20 @@ echo "deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmwa
 
 echo "Arquivos de repositios configurado!\n"
 
+echo -e "\n"
 
 #Atualização
 
 #Atualizando repositorios e sistema
 apt-get -y update && apt -y full-upgrade
 
+echo -e "\n"
 
 #Cmatrix
 #Instação do CMTRIX
 apt -y install cmatrix
-
-#Cmatrix
-#Instação do CMTRIX
-apt -y install cmatrix
-
 echo -e "CMTRIX instalado!\n"
+echo -e "\n"
 
 
 #SSH
@@ -64,6 +59,8 @@ echo -e "CMTRIX instalado!\n"
 apt -y install cmatrix
 echo -e SSH instalado!
 echo -e "\n"
+
+#Fim
 echo -e "#############################\n"
 
 echo -e "Configuração completa!!!\n"
