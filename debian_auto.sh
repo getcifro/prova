@@ -63,8 +63,8 @@ echo -e CMTRIX instalado!
 apt -y install cmatrix
 echo -e SSH instalado!
 
-echo -e " Configuração completa!!!\n"
-echo -e " Aluno: Ramon Shockness\n"
-echo -e " Professor: Tiago\n"
-echo -e " date\n"
+echo -e "Configuração completa!!!\n"
+echo -e "Aluno: Ramon Shockness\n"
+echo -e "Professor: Tiago\n"
+date
 timedatectl
