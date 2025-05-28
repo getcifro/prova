@@ -23,18 +23,18 @@ cp /etc/apt/sources.list.d/debian.sources /etc/apt/sources.list.d/debian.sources
 
 #comentando linha do CD/ROM
 
-sed -i '1,3s/^[^#]/# &/g' /etc/apt/sources.list.d/debian.sources
+sed -i '1,1s/^[^#]/# &/g' /etc/apt/sources.list.d/debian.sources
 
 #Adicionando repositorios
 
-echo "deb http://deb.debian.org/debian bookworm main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources"
-echo "deb-src http://deb.debian.org/debian bookworm main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources"
+echo "deb http://deb.debian.org/debian bookworm main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources
+echo "deb-src http://deb.debian.org/debian bookworm main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources
 
-echo "deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources"d
-echo "deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources"
+echo "deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources
+echo "deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources
 
-echo "deb http://deb.debian.org/debian bookworm-updates main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources"
-echo "ddeb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources"
+echo "deb http://deb.debian.org/debian bookworm-updates main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources
+echo "deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources
 
 echo Arquivos de repositios configurado!
 
@@ -61,6 +61,5 @@ echo -e CMTRIX instalado!
 apt -y install cmatrix
 echo -e SSH instalado!
 
-msg_ok "Configuração completa!\n"
 echo -e "Para acessar ssh.
          ${BL}http://${IP}:22${CL} \n"
