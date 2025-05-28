@@ -23,11 +23,11 @@ cp /etc/apt/sources.list.d/debian.sources /root/debian.sources.copy
 
 #comentando linha do CD/ROM
 
-sed -i '1,1s/^[^#]/# &/g' /etc/apt/sources.list.d/debian.sources
+#sed -i '1,1s/^[^#]/# &/g' /etc/apt/sources.list.d/debian.sources
 
 #Adicionando repositorios
 
-echo "deb http://deb.debian.org/debian bookworm main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources
+echo "deb http://deb.debian.org/debian bookworm main non-free-firmware" > /etc/apt/sources.list.d/debian.sources
 echo "deb-src http://deb.debian.org/debian bookworm main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources
 
 echo "deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware" >> /etc/apt/sources.list.d/debian.sources
