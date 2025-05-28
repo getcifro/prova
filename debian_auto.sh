@@ -21,7 +21,7 @@ echo -e "Iniciando configuração..."
 
 # Copia de segurança
 mkdir /root/bkp
-cp /etc/apt/debian.sources /root/bkp/debian.sources.copy
+cp /etc/apt/sources.list /root/bkp/sources.list.copy
 
 #comentando linha do CD/ROM
 
@@ -66,5 +66,6 @@ echo -e SSH instalado!
 echo -e "Configuração completa!!!\n"
 echo -e "Aluno: Ramon Shockness\n"
 echo -e "Professor: Tiago\n"
+
 date
-timedatectl
+#timedatectl
