@@ -64,11 +64,10 @@ echo -e "\n"
 
 #Fim
 echo -e "...................................\n"
-
+date
 echo -e "Configuração completa!!!\n"
 echo -e "Aluno: Ramon Shockness\n"
 echo -e "Professor: Tiago\n"
-date
 echo -e "...................................\n"
 
 #timedatectl
