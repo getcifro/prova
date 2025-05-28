@@ -36,7 +36,7 @@ echo "deb-src http://deb.debian.org/debian-security/ bookworm-security main non-
 echo "deb http://deb.debian.org/debian bookworm-updates main non-free-firmware" >> /etc/apt/sources.list
 echo "deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware" >> /etc/apt/sources.list
 
-echo "Arquivos de repositios configurado!\n"
+echo "Arquivos de repositios configurado!"
 
 echo -e "\n"
 
@@ -49,6 +49,7 @@ echo -e "\n"
 
 #Cmatrix
 #Instação do CMTRIX
+echo -e "Instalando CMTRIX!"
 apt -y install cmatrix
 echo -e "CMTRIX instalado!\n"
 echo -e "\n"
@@ -56,16 +57,18 @@ echo -e "\n"
 
 #SSH
 #Instação do SSH
+echo -e "Instalando CMTRIX!"
 apt -y install cmatrix
 echo -e SSH instalado!
 echo -e "\n"
 
 #Fim
-echo -e "#############################\n"
+echo -e "...................................\n"
 
 echo -e "Configuração completa!!!\n"
 echo -e "Aluno: Ramon Shockness\n"
 echo -e "Professor: Tiago\n"
-
 date
+echo -e "...................................\n"
+
 #timedatectl
