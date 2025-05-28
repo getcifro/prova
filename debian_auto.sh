@@ -38,7 +38,7 @@ echo "deb-src http://deb.debian.org/debian-security/ bookworm-security main non-
 echo "deb http://deb.debian.org/debian bookworm-updates main non-free-firmware" >> /etc/apt/sources.list
 echo "deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware" >> /etc/apt/sources.list
 
-echo Arquivos de repositios configurado!
+echo "Arquivos de repositios configurado!\n"
 
 
 #Atualização
@@ -55,7 +55,7 @@ apt -y install cmatrix
 #Instação do CMTRIX
 apt -y install cmatrix
 
-echo -e CMTRIX instalado!
+echo -e "CMTRIX instalado!\n"
 
 
 #SSH
