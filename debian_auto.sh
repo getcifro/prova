@@ -13,6 +13,7 @@ cat <<"EOF"
                                     
 EOF
 
+echo -e "#############################\n"
 echo -e "Iniciando configuração..."
 
 #Configuração do  repositorio
@@ -44,7 +45,7 @@ echo "Arquivos de repositios configurado!\n"
 #Atualização
 
 #Atualizando repositorios e sistema
-apt-get -y update && sudo apt full-upgrade
+apt-get -y update && apt full-upgrade
 
 
 #Cmatrix
@@ -62,6 +63,8 @@ echo -e "CMTRIX instalado!\n"
 #Instação do SSH
 apt -y install cmatrix
 echo -e SSH instalado!
+echo -e "\n"
+echo -e "#############################\n"
 
 echo -e "Configuração completa!!!\n"
 echo -e "Aluno: Ramon Shockness\n"
