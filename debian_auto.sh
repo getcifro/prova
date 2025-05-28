@@ -19,7 +19,7 @@ echo -e "Iniciando configuração..."
 # /etc/apt/sources.list.d/debian.sources
 
 # Copia de segurança
-cp /etc/apt/sources.list.d/debian.sources /etc/apt/sources.list.d/debian.sources.copy
+cp /etc/apt/sources.list.d/debian.sources /root/debian.sources.copy
 
 #comentando linha do CD/ROM
 
