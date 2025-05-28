@@ -45,7 +45,7 @@ echo "Arquivos de repositios configurado!\n"
 #Atualização
 
 #Atualizando repositorios e sistema
-apt-get -y update && apt full-upgrade
+apt-get -y update && apt -y full-upgrade
 
 
 #Cmatrix
